@@ -1,0 +1,49 @@
+05:54:06 [cargo] error[E0432]: unresolved import `crate::main`
+ --> src\components\common\header.rs:1:13
+  |
+1 | use crate::{main::Route, models::User, state::AppState};
+  |             ^^^^
+  |             |
+  |             unresolved import
+  |             help: a similar path exists: `dioxus_elements::main`
+
+05:54:06 [cargo] error[E0432]: unresolved import `crate::main`
+ --> src\components\common\sidebar.rs:1:13
+  |
+1 | use crate::{main::Route, models::{User, UserRole}, state::AppState};
+  |             ^^^^
+  |             |
+  |             unresolved import
+  |             help: a similar path exists: `dioxus_elements::main`
+
+05:54:06 [cargo] error[E0432]: unresolved import `crate::main`
+ --> src\pages\login.rs:2:5
+  |
+2 |     main::Route,
+  |     ^^^^
+  |     |
+  |     unresolved import
+  |     help: a similar path exists: `dioxus_elements::main`
+
+05:54:06 [cargo] error[E0432]: unresolved import `crate::main`
+ --> src\pages\profile.rs:5:5
+  |
+5 |     main::Route,
+  |     ^^^^
+  |     |
+  |     unresolved import
+  |     help: a similar path exists: `dioxus_elements::main`
+
+05:54:06 [cargo] error[E0432]: unresolved import `crate::main`
+ --> src\pages\auth_callback.rs:1:30
+  |
+1 | use crate::{state::AppState, main::Route};
+  |                              ^^^^
+  |                              |
+  |                              unresolved import
+  |                              help: a similar path exists: `dioxus_elements::main`
+
+05:54:07 [cargo] For more information about this error, try `rustc --explain E0432`.
+05:54:07 [cargo] error: could not compile `dash` (bin "dash") due to 5 previous errors
+05:54:07 [cargo] Caused by:
+05:54:07 [dev] Build failed: Other(Cargo build failed, signaled by the compiler. Toggle tracing mode (press `t`) for more information.)

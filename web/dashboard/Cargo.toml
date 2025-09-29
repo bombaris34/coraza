@@ -1,0 +1,31 @@
+[package]
+name = "dash"
+version = "0.1.0"
+authors = ["bombaris34 <reapsgg@proton.me>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+chrono = { version = "0.4.41", features = ["serde"] }
+dioxus = { version = "0.6.0", features = [] }
+getrandom = { version = "0.3.3", features = ["wasm_js"] }
+reqwest = { version = "0.12.22", features = ["json", "multipart"] }
+serde = { version = "1.0.219", features = ["derive"] }
+serde_json = "1.0.141"
+uuid = { version = "1.17.0", features = ["v4", "serde", "rng-getrandom", "js"] }
+dioxus-router = "0.6.0"
+web-sys = { version = "0.3.77", features = ["UrlSearchParams", "Storage", "Window", "Location", "Navigator", "Clipboard", "File", "FileList", "FileReader", "Blob", "FormData", "HtmlInputElement", "Event", "EventTarget"] }
+anyhow = "1.0"
+log = "0.4.22"
+dioxus-logger = "0.5.0"
+gloo-timers = { version = "0.3.0", features = ["futures"] }
+wasm-bindgen = "0.2.100"
+tracing = "0.1.41"
+base64 = "0.22.0"
+
+[features]
+default = ["web"]
+web = ["dioxus/web"]
+desktop = ["dioxus/desktop"]
+mobile = ["dioxus/mobile"]

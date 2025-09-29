@@ -1,0 +1,1 @@
+The previous design called for a "Servers" page, however the project no longer includes this feature. Any references to servers or a servers page have been removed from the dashboard.

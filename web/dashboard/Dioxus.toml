@@ -1,0 +1,12 @@
+[application]
+
+[web.app]
+
+# HTML title tag content
+title = "dash"
+
+[web.resource.dev]
+
+# Javascript code file
+# serve: [dev-server] only
+script = []
